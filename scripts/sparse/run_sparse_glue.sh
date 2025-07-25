@@ -15,8 +15,8 @@ sparse_methods=(
     "synflow"
     # "grasp"
     "magnitude"
-    "saliency"
-    "skeletonization"
+    "snip"
+    "force"
     "Taylor-FO"
 )
 

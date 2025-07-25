@@ -398,15 +398,15 @@ def update_linear_sparse(accelerator, model, trainloader, args):
         'magnitude': compute_magnitude_scores,
         'gradient': functools.partial(
             compute_gradient_based_scores, lambda w, s: torch.abs(s)),
-        'fisher_info': compute_fisher_info_scores,
-        'saliency': functools.partial(
+        'snip': functools.partial(
             compute_gradient_based_scores, lambda w, s: torch.abs(w * s)),
-        'skeletonization': functools.partial(
+        'force': functools.partial(
             compute_gradient_based_scores, lambda w, s: -w * s),
         'Taylor-FO': functools.partial(
             compute_gradient_based_scores, lambda w, s: (w * s) ** 2),
         'synflow': compute_synflow_scores,
         'grasp': compute_grasp_scores,
+        'fisher_info': compute_fisher_info_scores,
     }
     linear_sparse_layers = [
         layer for layer in model.modules() if isinstance(layer, LinearSparse)
