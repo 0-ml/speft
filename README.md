@@ -10,7 +10,7 @@ This is the implementation of ACL 2025 paper： [Refining Salience-Aware Sparse 
 
 To run our code, please install all the dependency packages by using the following command:
 
-    `pip install -r requirements.txt`
+    pip install -r requirements.txt
 
 If you find any libraries not listed in `requirements.txt` are needed when running the code, **please let us know** so we can update the file promptly. Thank you!
 
