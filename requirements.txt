@@ -1,0 +1,45 @@
+lightning
+transformers >= 4.42.3
+diffusers
+accelerate
+toml
+timm
+pytorch-nlp
+datasets
+onnx
+optimum
+black
+GitPython
+colorlog
+cocotb[bus]==1.8.0
+pytest
+ipython
+ipdb
+sentencepiece
+einops
+deepspeed
+pybind11
+tabulate
+tensorboard
+optuna
+stable-baselines3
+scikit-learn
+nni
+# LogicNets
+h5py
+pyyaml
+numpy
+pandas
+wandb
+debugpy
+# doc
+sphinx
+sphinx-rtd-theme
+evaluate
+peft
+sacrebleu
+sqlitedict
+more_itertools
+openai
+trl
+pytablewriter
